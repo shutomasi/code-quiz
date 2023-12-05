@@ -13,4 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
             highscoresList.appendChild(listItem); // add li to the list in HTML
         });
     }
+
+    // clear high scores function
+    function clearHighscores() {
+        localStorage.removeItem("highScores"); // remove highScores data from localStorage
+        displayHighscores(); // run display high scores function to update page
+    }
+
+    clearButton.addEventListener("click", clearHighscores); // linked "clear highscores" function to clear button
 });
