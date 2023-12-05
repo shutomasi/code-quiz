@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    displayHighscores() // run high scores function
+
     // clear high scores function
     function clearHighscores() {
         localStorage.removeItem("highScores"); // remove highScores data from localStorage
